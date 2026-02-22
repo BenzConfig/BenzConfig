@@ -2,8 +2,8 @@
 
 ##
 
-![ground](res/ground.png)
+![ground](github/ground.png)
 
 ##
 
-![GPL](res/gplv3.png)
+![GPL](github/gplv3.png)
