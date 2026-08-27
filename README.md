@@ -1,1 +1,1 @@
-![ground](github/config.png)
+![BenzConfig](github/benz.png)
