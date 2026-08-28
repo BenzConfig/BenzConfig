@@ -1,0 +1,170 @@
+<Window
+    x:Class="benzconfig.AboutWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Height="300" Width="500" Title="О программе"
+    ResizeMode="NoResize" WindowStyle="None"
+    WindowStartupLocation="CenterOwner"
+    MouseLeftButtonDown="Window_MouseLeftButtonDown">
+
+    <Border
+        Background="#0A0A0A">
+
+        <Grid>
+                
+        <Grid.RowDefinitions>
+            <RowDefinition Height="35"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+            <!-- Header -->
+            <Border Grid.Row="0" Background="Black">
+
+                <Button Click="BtnClose_Click"
+                        Style="{StaticResource WindowControl}"
+                        Tag="/res/img/close.png"/>
+
+                </Border>
+
+            <!-- Content -->
+            <Grid Grid.Row="1" Margin="20">
+
+            <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="205"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Image Grid.Column="0"
+                    Width="150"
+                    Stretch="Uniform"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Left"
+                    Margin="25,0,0,15"
+                    Source="/res/img/logo.png"/>
+
+                <StackPanel Grid.Column="1" Margin="0,0,0,15" VerticalAlignment="Center">
+
+                    <TextBlock Text="BenzConfig 2.5"
+                        Foreground="#EAEAEA"
+                        FontFamily="/res/font/Baijamjuree/#Bai Jamjuree"
+                        FontWeight="SemiBold"
+                        FontSize="24"
+                        Margin="0,0,0,15"/>
+
+                    <TextBlock FontSize="14" FontFamily="/res/font/Inter/#Inter" FontWeight="Regular">
+                            
+                        <Run Text="Лицензия " Foreground="#B4B4B4"/>
+                            
+                        <Hyperlink
+                            NavigateUri="https://www.gnu.org/licenses/gpl-3.0.txt"
+                            RequestNavigate="Hyperlink_RequestNavigate"
+                            TextDecorations="{x:Null}">
+                                GNU GPL V3
+                            
+                            <Hyperlink.Style>
+                                <Style
+                                    TargetType="Hyperlink">
+                                    <Setter
+                                        Property="Foreground"
+                                        Value="#787878"/>
+                                    <Style.Triggers>
+                                        <Trigger
+                                            Property="IsMouseOver"
+                                            Value="True">
+                                            <Setter
+                                                Property="Foreground"
+                                                Value="#FD2357"/>
+                                        </Trigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Hyperlink.Style>
+                            
+                        </Hyperlink>
+                            
+                    </TextBlock>
+
+                    <TextBlock FontSize="14" FontFamily="/res/font/Inter/#Inter" FontWeight="Regular">
+                            
+                            <Run Text="Материал "
+                                Foreground="#B4B4B4"
+                                FontWeight="Regular"/>
+    
+                            <Hyperlink
+                                NavigateUri="https://soloist.ai/nrg"
+                                RequestNavigate="Hyperlink_RequestNavigate"
+                                FontFamily="/res/font/Inter/#Inter"
+                                FontWeight="Regular"
+                                TextDecorations="{x:Null}">
+                                    www.soloist.ai/nrg
+                                <Hyperlink.Style>
+                                    <Style
+                                        TargetType="Hyperlink">
+                                        <Setter
+                                            Property="Foreground"
+                                            Value="#787878"/>
+                                        <Style.Triggers>
+                                            <Trigger
+                                                Property="IsMouseOver"
+                                                Value="True">
+                                                <Setter
+                                                    Property="Foreground"
+                                                    Value="#FD2357"/>
+                                            </Trigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </Hyperlink.Style>
+                            </Hyperlink>
+                            
+                    </TextBlock>
+
+                    <TextBlock FontSize="14" FontFamily="/res/font/Inter/#Inter" FontWeight="Regular">
+                                   
+                        <Run
+                            Text="Исходник "
+                            Foreground="#B4B4B4"
+                            FontWeight="Regular"/>
+    
+                        <Hyperlink
+                            NavigateUri="https://github.com/BenzConfig?tab=repositories"
+                            RequestNavigate="Hyperlink_RequestNavigate"
+                            FontFamily="/Add/Font/Inter/#Inter"
+                            FontWeight="Regular"
+                            TextDecorations="{x:Null}">
+                            www.github.com
+                            <Hyperlink.Style>
+                                <Style
+                                    TargetType="Hyperlink">
+                                    <Setter
+                                        Property="Foreground"
+                                        Value="#787878"/>
+                                    <Style.Triggers>
+                                        <Trigger
+                                            Property="IsMouseOver"
+                                            Value="True">
+                                            <Setter
+                                                Property="Foreground"
+                                                Value="#FD2357"/>
+                                        </Trigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Hyperlink.Style>
+                        </Hyperlink>
+                    </TextBlock>
+
+                    <TextBlock Text="© 2024 NRG'S. All right reserved."
+                        Opacity="0.5"
+                        Foreground="Gray"
+                        FontSize="14"
+                        FontFamily="/res/font/Inter/#Inter"
+                        FontWeight="Regular"
+                        Margin="0,15,0,0"/>
+                    
+                </StackPanel>
+                    
+            </Grid>
+
+        </Grid>
+            
+    </Border>
+    
+</Window>

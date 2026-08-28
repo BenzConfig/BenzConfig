@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net8.0-windows</TargetFramework>
+		<UseWPF>true</UseWPF>
+		<SelfContained>true</SelfContained>
+		<RuntimeIdentifier>win-x64</RuntimeIdentifier>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<ApplicationIcon>res\img\app.ico</ApplicationIcon>
+		<InvariantGlobalization>false</InvariantGlobalization>
+		<SatelliteResourceLanguages>ru;en</SatelliteResourceLanguages>
+
+		<Version>2.5.1</Version>
+		<FileVersion>2.5.1.1</FileVersion>
+
+		<AssemblyTitle>BenzConfig</AssemblyTitle>
+		<AssemblyProduct>BenzConfig</AssemblyProduct>
+		<AssemblyCompany>NRG</AssemblyCompany>
+		<Copyright> © 2024 NRG'S. All right reserved. </Copyright>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Folder Include="res\" />
+		<Resource Include="res\img\**\*.png" />
+		<Resource Include="res\img\**\*.ico" />
+		<Resource Include="res\font\**\*.ttf" />
+	</ItemGroup>
+	
+</Project>
