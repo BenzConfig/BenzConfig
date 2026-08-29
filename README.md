@@ -12,4 +12,4 @@
 | **Видеокарта** | Встроенная (с поддержкой DirectX 9) | Встроенная (с поддержкой DirectX 12) |
 | **Диск** | ~250 МБ | 500 МБ |
 
-> ⚠️ **Важно:** Если вы запускаете стандартную версию приложения, на вашем компьютере должен быть установлен [.NET Desktop Runtime 8.0**](https://builds.dotnet.microsoft.com/dotnet/Runtime/8.0.30/dotnet-runtime-8.0.30-win-x64.exe).
+> ⚠️ **Важно:** Если вы запускаете стандартную версию приложения, на вашем компьютере должен быть установлен [.NET Desktop Runtime 8.0](https://builds.dotnet.microsoft.com/dotnet/Runtime/8.0.30/dotnet-runtime-8.0.30-win-x64.exe).
