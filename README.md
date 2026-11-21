@@ -1,4 +1,4 @@
-![BenzConfig](github/benz.png) 
+![BenzConfig](Github/BenzConfig.png) 
 
 | Компонент | Минимальные требования | Рекомендуемые требования |
 | :--- | :--- | :--- |
